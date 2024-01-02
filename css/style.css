@@ -465,12 +465,20 @@ img {
 
 .button-style {
     display: inline-block;
-    width: max-content;
-    padding: 0.5em 1em;
+    padding: 11px 20px;
+    font-weight: 600;
+    font-size: small;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
     background-color: var(--primary-color);
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
+    transition: 500ms;
+}
+
+.button-style:hover {
+    transform: scale(1.1);
+    transition: 250ms;
 }
 
 /* ↑ Buttons ↑ */
