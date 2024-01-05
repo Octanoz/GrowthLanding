@@ -24,6 +24,12 @@ body {
     overflow-x: hidden;
 }
 
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+}
+
 a {
     text-decoration: none;
     color: #333;
@@ -92,10 +98,6 @@ img {
     height: 550px;
 }
 
-.hero .hero-content {
-    width: 70%;
-}
-
 .hero .hero-text {
     width: 70%;
     margin-bottom: 20px;
@@ -144,7 +146,6 @@ img {
 }
 
 .testimonials .testimonials-heading {
-    width: 700px;
     margin-bottom: 40px;
 }
 
@@ -690,7 +691,6 @@ img {
     }
 
     .hero .hero-content {
-        width: 100%;
         align-items: center;
     }
 
@@ -761,7 +761,7 @@ img {
         font-size: 1.9rem;
     }
 
-    /* buttons */
+    /* Buttons */
     .btn {
         display: block;
         width: 100%;
