@@ -13,14 +13,21 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    color-scheme: light dark;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+    }
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     line-height: 1.5;
-    background-color: #fff;
+    background-color: light-dark(#fff, #05574f);
     overflow-x: hidden;
 }
 
@@ -229,6 +236,7 @@ img {
 }
 
 .pricing .pricing-footer a {
+    color: light-dark(black, white);
     font-weight: bolder;
     transition: 2s;
 }
@@ -364,6 +372,8 @@ img {
 }
 
 .footer form input[type='email'] {
+    color: light-dark(black, black);
+    background-color: light-dark(white, hsl(0, 0%, 93%));
     border-radius: 5px;
     font-size: 1em;
     margin-right: 10px;
@@ -765,6 +775,11 @@ img {
     .btn {
         display: block;
         width: 100%;
+    }
+
+    .button-style {
+        width: 100%;
+        text-align: center;
     }
 }
 
